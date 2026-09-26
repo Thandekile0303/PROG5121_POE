@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class PROG5121_POE {
 
+        // Main entry point for the QuickChat application
+    
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Login login = new Login();
