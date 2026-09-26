@@ -2,6 +2,8 @@ package com.mycompany.quickchatapp;
 
 public class Login {
 
+    // Handles user registration and authentication
+    
     private String storedUsername;
     private String storedPassword;
     private String storedCellPhone;
