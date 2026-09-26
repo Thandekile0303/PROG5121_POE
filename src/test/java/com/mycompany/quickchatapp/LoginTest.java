@@ -4,6 +4,8 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class LoginTest {
+    
+        // Unit tests for the Login class
 
     Login login = new Login();
 
