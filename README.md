@@ -15,3 +15,7 @@ Run `PROG5121_POE.java` in NetBeans.
 
 ### Testing
 Unit tests are in `LoginTest.java`. Run with Ctrl+F6 in NetBeans.
+
+
+## Author
+Thandekile Angel Mntungwa
