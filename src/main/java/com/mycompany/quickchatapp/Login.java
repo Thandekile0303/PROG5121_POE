@@ -1,8 +1,18 @@
 package com.mycompany.quickchatapp;
 
+/**
+ * Login class - handles user registration and authentication.
+ * 
+ * See REFERENCES section at the bottom of this file.
+ * 
+ * @author Thandekile Mntungwa
+ */
+
+
 public class Login {
 
     // Handles user registration and authentication
+  
     
     private String storedUsername;
     private String storedPassword;
@@ -35,7 +45,12 @@ public class Login {
 
         return hasCapital && hasNumber && hasSpecial;
     }
-
+/**
+ * Checks that the cell phone number contains the international 
+ * country code (+27) followed by exactly 9 digits.
+ * 
+ * Regex pattern based on [1] and [2] (see REFERENCES at bottom).
+ */
     public boolean checkCellPhoneNumber(String cellPhone) {
         String regex = "^\\+27[0-9]{9}$";
         return cellPhone.matches(regex);
@@ -84,3 +99,16 @@ public class Login {
         return storedCellPhone;
     }
 }
+// ============================================================
+// REFERENCES
+// ============================================================
+// [1] Oracle, "Pattern (Java Platform SE 8)," Oracle Documentation.
+//     [Online]. Available:
+//     https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html.
+//     [Accessed: Sep. 28, 2026].
+//
+// [2] "Regex to check South African phone numbers," Stack Overflow.
+//     [Online]. Available:
+//     https://stackoverflow.com/questions/4210450/.
+//     [Accessed: Sep. 28, 2026].
+// ============================================================
