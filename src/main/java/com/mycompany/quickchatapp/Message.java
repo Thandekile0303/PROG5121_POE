@@ -70,7 +70,7 @@ public class Message {
         if (recipient == null) {
             return "Cell phone number is incorrectly formatted or does not contain an international code. Please correct the number and try again.";
         }
-        String regex = "^\\+[0-9]{1,10}$";
+        String regex = "^\\+[0-9]{1,11}$";
         if (recipient.matches(regex)) {
             return "Cell phone number successfully captured.";
         } else {
