@@ -12,13 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-/**
- * The Message class handles creation, validation, hashing, and storage of messages.
- *
- * JSON storage implemented using the Gson library:
- * Google. (2023). Gson (Version 2.10.1) [Computer software].
- * https://github.com/google/gson
- */
+
 public class Message {
 
     private String messageID;
@@ -134,7 +128,7 @@ public class Message {
         return totalMessagesSent;
     }
 
-    public void storeMessage() {
+      public void storeMessage() {
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         List<Message> messages = readMessagesFromJson();
         messages.add(this);
@@ -143,6 +137,7 @@ public class Message {
         } catch (IOException e) {
             System.out.println("Error storing message: " + e.getMessage());
         }
+   
     }
 
     public static List<Message> readMessagesFromJson() {
