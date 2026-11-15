@@ -98,6 +98,15 @@ public class Login {
     public String getStoredCellPhone() {
         return storedCellPhone;
     }
+
+public String returnLoginStatus(String loginUsername, String loginPassword) {
+    if (loginUser(loginUsername, loginPassword)) {
+        return "Welcome " + firstName + ", " + lastName + " it is great to see you again.";
+    } else {
+        return "Username or password incorrect, please try again.";
+    }
+}
+    
 }
 // ============================================================
 // REFERENCES
